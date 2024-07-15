@@ -1,0 +1,20 @@
+.breed-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .breed-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.breed-item {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  
