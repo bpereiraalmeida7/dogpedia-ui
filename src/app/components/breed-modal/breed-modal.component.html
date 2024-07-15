@@ -1,9 +1,19 @@
-<section>
-    <h1>{{ data.name }}</h1>
-    <img [src]="data.image.url" alt="{{ data.name }}" />
-    <p>Temperamento: {{ data.temperament }}</p>
-    <p>Peso: {{ data.weight.imperial }}</p>
-    <p>Altura: {{ data.height.imperial }}</p>
-    <p>Expectativa de Vida: {{ data.life_span }}</p>
-    <p>Origem: {{ data.country_code }}</p>
-</section>
+<mat-dialog-content class="dog-dialog__content">
+    <section class="dog-dialog__section">
+      <h1 class="dog-dialog__title">{{ data.name }}</h1>
+      <img class="dog-dialog__image" [src]="data.image.url" alt="{{ data.name }}" />
+      <section class="dog-dialog__infos">
+          <p class="dog-dialog__info"><span class="dog-dialog__label">Temperamento:</span> {{ data.temperament }}</p>
+          <p class="dog-dialog__info"><span class="dog-dialog__label">Peso:</span> {{ data.weight.imperial }} lbs</p>
+          <p class="dog-dialog__info"><span class="dog-dialog__label">Altura:</span> {{ data.height.imperial }} inches</p>
+          <p class="dog-dialog__info"><span class="dog-dialog__label">Expectativa de Vida:</span> {{ data.life_span }} anos</p>
+          @if (data.country_code) {
+            <p class="dog-dialog__info"><span class="dog-dialog__label">Origem:</span> {{ data.country_code }}</p>
+          }
+      </section>
+    </section>
+  </mat-dialog-content>
+<mat-dialog-actions class="dog-dialog__actions">
+    <button mat-button mat-dialog-close>Fechar</button>
+</mat-dialog-actions>
+  

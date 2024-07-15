@@ -19,8 +19,8 @@ import {MatPaginatorModule, PageEvent} from '@angular/material/paginator';
 export class BreedComponent {
   breeds: Breed[] = [];
   totalBreeds: number = 0;
-  pageSize = 12;
-  currentPage = 0;
+  pageSize: number = 12;
+  currentPage: number = 0;
   cols: number = 6;
 
   constructor(private dogApiService: DogApiService) {}

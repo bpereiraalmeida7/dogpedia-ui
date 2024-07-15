@@ -1,0 +1,67 @@
+@import '@styles/styles.scss';
+.dog-dialog {
+    &__content {
+        padding: 16px;
+        background-color: #fafafa;
+        max-height: 400px;
+        overflow-y: auto;
+    
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+          background-color: #888; 
+          border-radius: 4px;
+        }
+    
+        &::-webkit-scrollbar-thumb:hover {
+          background-color: #555; 
+        }
+    
+        &::-webkit-scrollbar-track {
+          background-color: #f1f1f1; 
+        }
+    }
+  
+    &__section {
+      text-align: center;
+    }
+
+    &__infos {
+      text-align: left !important;
+    }
+  
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #333;
+    }
+  
+    &__image {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+  
+    &__info {
+      font-size: 16px;
+      margin: 8px 0;
+      color: #555;
+    }
+  
+    &__label {
+      font-weight: 600;
+      color: #333;
+    }
+  
+    &__actions {
+      justify-content: center;
+      padding: 16px;
+      background-color: $background-color;
+    }
+}
+  

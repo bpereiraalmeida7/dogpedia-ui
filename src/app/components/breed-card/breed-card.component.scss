@@ -1,45 +1,11 @@
-@import './../../../styles/styles.scss';
+@import '@styles/styles.scss';
 
-.example-card {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    cursor:pointer;
-}
-
-.breed-card {
-    @include flex-center;
-    flex-direction: column;
-    padding: 16px;
-    // border: 1px solid $secondary-color;
-    border-radius: 8px;
-    background-color: white;
-    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-  
-    h2 {
-      margin: 16px 0;
-      color: $primary-color;
-    }
-  
-    button {
-      background-color: $primary-color;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 4px;
-      cursor: pointer;
-  
-      &:hover {
-        background-color: darken($primary-color, 10%);
-      }
-    }
+.card {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  cursor:pointer;
 }
   
